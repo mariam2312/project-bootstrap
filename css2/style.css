@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&family=Varela+Round&display=swap');
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    text-align: right;
+}
+:root{
+    --maincolor:#ffc107;
+}
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+.section-title:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 3px;
+    background-color:var(--maincolor) ;
+    bottom: -10px;
+}
+.home{
+    height: 600px;
+    background-size: cover;
+    background-image: url("../images/slide-bg-1.jpg");
+    padding: 1px;
+}
+.home-item{
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+/*to be contant w-100% in sm*/
+@media (max-width:768px){
+    .home-item {
+        width: 100%;
+    }
+}
+.home-item h2{
+    color: white;
+    font-size: 45px;
+}
+.home-item p {
+    color: white;
+    font-size: 20px;
+}
+.home-item .btn{
+    color: rgb(18, 17, 17);
+}
+.about{
+    padding: 80px 0;
+}
+.about .btn{
+    margin-top: 40px;
+}
+.news-left, .footer-left{
+    display: flex;
+    align-items: center;
+}
+.news-left img, .footer-left img{
+    width: 100px;
+    margin-left: 10px;
+}.sub{
+    height: 400px;
+    background-size: cover;
+    background-image: url("../images/slide-bg-1.jpg");
+    padding: 1px;
+}
+.sub-item{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+.sub-item input{
+    width: 500px;
+    margin:20px ;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    background-color: rgb(66, 60, 60);
+    color: white;
+    margin-top: 30px;
+}
+.footer-img{
+    background: white;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+}
+.footer-left{
+    font-size: 12px;
+}
+.footer-left img{
+    width: 100px;
+}
+
+
+
+
+/*blog*/
+.breadcrumb{
+    margin: 0;
+    justify-content: flex-end;/*يجي في نهايه */
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+}
+.blog .jumbotron{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid var(--maincolor) ;
+}
+.blog .jumbotron .blog-det{
+    flex: 1;
+}
+.blog .jumbotron .blog-img{
+    flex: 1;
+}
